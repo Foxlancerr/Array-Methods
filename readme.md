@@ -156,85 +156,31 @@ console.log(arr2.join());
 console.log(arr2.join(" "));
 ```
 
-//\***\*\_\_\_**\*\*\***\*\*\***\* lecture one is completed now **\*\*\*\***\*\*\*\***\_\_**\*\*\*\*
+## forEach function in javascript
 
-//\***\*\_\_\_**\*\*\***\*\*\***\* lecture two is completed now **\*\*\*\***\*\*\*\***\_\_**\*\*\*\*
+- foreach work same as looping but its easeir way to loop a code.
+- foreach have a higher precendence function because it have passing
+  function as arguments the function which it have passed three more
+  arguments the 1st one is essentiol but the two other is for your choice.
 
-/\*
+syntex is
 
-forEach function in javascript
-
-foreach work same as looping but its easeir way to loop a code.
-foreach have a higher precendence function because it have passing
-function as arguments the function which it have passed three more
-arguments the 1st one is essentiol but the two other is for your choice.
-
-syntex is forEach(function(elem, index ,array){
+```js
+forEach(function(elem, index ,array){
 your code is here............
 ............................
 })
+```
 
-the elem store every value of the array when it runs.
-the index store every index No. of the array when it runs.
-the array store the array which will be for looping.
+- the elem store every value of the array when it runs.
+- the index store every index No. of the array when it runs.
+- the array store the array which will be for looping.
 
-the example are mention it.
-\*/
+#### example
 
-let arr = [23, 45, 56, 78, 75, 47, 90]
+```js
+let arr = [23, 45, 56, 78, 75, 47, 90];
 arr.forEach(function (elem, index, array) {
-console.log("the students marks of paper " + index + " is " + elem);
+  console.log("the students marks of paper " + index + " is " + elem);
 });
-
-/_using for loop to calculate students marks ,its percentage
-and decide that the students is fail or pass.
-_/
-
-//students record store in the arrays
-let students = [
-{ name: 'ali', class: '4rd', marks: [95, 97, 78, 90, 80] },
-{ name: 'sudais', class: '2nd', marks: [65, 47, 88, 67, 40] },
-{ name: 'ahmad', class: '9th', marks: [25, 77, 38, 40, 20] },
-{ name: 'ishfaq', class: '11th', marks: [35, 37, 88, 70, 60] },
-];
-
-let maxMark = 500;
-
-//total marks function
-function totalMarks(marksArr) {
-// console.log(marksArr);
-let total = 0;
-for (let mark of marksArr) {
-total += mark;
-}
-return total;
-}
-
-//get result functon is here.
-function getresult(stdArrays) {
-
-    //forEach loap is used
-    stdArrays.forEach(function (elem) {
-        let eachStu = elem;
-        //totalMarks function called
-        let totaled = totalMarks(elem.marks);
-
-        // percentag is calculated here
-        let percentage = ((totaled / maxMark) * 100).toFixed(0) + "%";
-
-        //check condition is a students pass or fail
-        let ispass = percentage >= '45' ? "The student is pass" : "the students is fail";
-
-        //log a result in devolper console
-        console.log(eachStu);
-        console.log(totaled);
-        console.log(percentage);
-        console.log(ispass);
-    });
-
-}
-
-//getResult function is calling
-getresult(students)
-
-//\***\*\_\_\_**\*\*\***\*\*\***\* lecture two is completed now **\*\*\*\***\*\*\*\***\_**\*\*\*\*
+```
