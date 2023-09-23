@@ -72,16 +72,23 @@ console.log(reverrse);
 console.log(arrReverse);
 ```
 
-//---------------- how to combine two arrays--------------
+## how to combine two arrays
 
-//--> concate in arrays
+## OR
 
-/_
-The conate method combine the two arrays and not modify the original arrays.
-syntex is arr1.concat(arr2);
-example are mention below
-_/
+## concate in arrays
 
+- The conate method combine the two arrays and not modify the original arrays.
+
+syntex is
+
+```js
+arr1.concat(arr2);
+```
+
+#### example
+
+```js
 let arrConcat1 = [12, 33, 34, 54, 45, 77, 35, 89];
 let arrConcat2 = [2, 73, 84, 70, 35, 9];
 console.log(arrConcat1);
@@ -90,15 +97,21 @@ let concate = arrConcat1.concat(arrConcat2);
 console.log(concate);
 console.log(arrConcat1);
 console.log(arrConcat2);
+```
 
-//--> split method in arrays
+## split method in arrays
 
-/_
-The split method is also used to combine the two arrays and not modify the original arrays.
-syntex is let arr3 = [...arr1,...arr2];
-example are mention below
-_/
+- The split method is also used to combine the two arrays and not modify the original arrays.
 
+syntex is
+
+```js
+let arr3 = [...arr1, ...arr2];
+```
+
+# example
+
+```js
 let arrSplit1 = [12, 33, 34, 54, 45, 77, 35, 89];
 let arrSplit2 = [2, 73, 84, 70, 35, 9];
 console.log(arrSplit1);
@@ -107,32 +120,41 @@ let splitt = [...arrSplit1, ...arrSplit2];
 console.log(splitt);
 console.log(arrSplit1);
 console.log(arrSplit2);
+```
 
-//--> jion method in arrays
+## jion method in arrays
 
-/_
-The jion method is used to all data which is presented in
-arrays to convert into a single index.
-by default is passes commas (,)in its arguments
-syntex is arr.jion();
-example are mention below
-_/
+- The jion method is used to all data which is presented in
+  arrays to convert into a single index.
+- by default is passes commas (,)in its arguments
 
-//for a number-------
+syntex is
 
+```js
+arr.jion();
+```
+
+#### example
+
+1. for a number
+
+```js
 let arr1 = [12, 33, 34, 54, 45, 77, 35, 89];
 console.log(arr1);
 console.log(arr1.join("-"));
 console.log(arr1.join());
 console.log(arr1.join(" "));
+```
 
-//for a string-------
+2. for a string
 
+```js
 let arr2 = ["a", "b", "c", "d", "e"];
 console.log(arr2);
 console.log(arr2.join("-"));
 console.log(arr2.join());
 console.log(arr2.join(" "));
+```
 
 //\***\*\_\_\_**\*\*\***\*\*\***\* lecture one is completed now **\*\*\*\***\*\*\*\***\_\_**\*\*\*\*
 
